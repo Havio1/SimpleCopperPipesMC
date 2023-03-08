@@ -25,7 +25,7 @@ import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.phys.Vec3;
 import org.jetbrains.annotations.Nullable;
 
-import static net.lunade.copper.blocks.CopperFitting.CORRODED_FITTING;
+//import static net.lunade.copper.blocks.CopperFitting.CORRODED_FITTING;
 import static net.minecraft.world.level.block.NoteBlock.INSTRUMENT;
 import static net.minecraft.world.level.block.NoteBlock.NOTE;
 import static net.minecraft.world.level.block.state.properties.BlockStateProperties.FACING;
@@ -116,12 +116,12 @@ public class RegisterPipeNbtMethods {
                 pipe.noteBlockCooldown = 40;
                 boolean corroded;
                 float volume = 3.0F;
-                if (blockState.getBlock() instanceof CopperPipe) { //Corroded Pipes Increase Instrument Sound Volume
+               /* if (blockState.getBlock() instanceof CopperPipe) { //Corroded Pipes Increase Instrument Sound Volume
                     corroded = blockState.getBlock() == CopperPipe.CORRODED_PIPE || world.getBlockState(pos.relative(directionOpp)).getBlock() == CORRODED_FITTING;
                     if (corroded) {
                         volume = 4.5F;
                     }
-                }
+                }*/
                 BlockPos originPos = new BlockPos(nbt.getVec3d());
                 noteBlock = world.getBlockState(originPos).is(Blocks.NOTE_BLOCK);
                 if (noteBlock) {

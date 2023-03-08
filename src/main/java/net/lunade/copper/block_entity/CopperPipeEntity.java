@@ -126,7 +126,7 @@ public class CopperPipeEntity extends AbstractSimpleCopperBlockEntity implements
             BlockState oppState = world.getBlockState(pos.relative(directionOpp));
             Block oppBlock = oppState.getBlock();
             this.canDispense = (dirBlock == Blocks.AIR || dirBlock == Blocks.WATER) && (oppBlock != Blocks.AIR && oppBlock != Blocks.WATER);
-            this.corroded = oppBlock == CopperFitting.CORRODED_FITTING || state.getBlock() == CopperPipe.CORRODED_PIPE;
+            //this.corroded = oppBlock == CopperFitting.CORRODED_FITTING || state.getBlock() == CopperPipe.CORRODED_PIPE;
             this.shootsControlled = oppBlock == Blocks.DROPPER;
             this.shootsSpecial = oppBlock == Blocks.DISPENSER;
             this.canAccept = !(oppBlock instanceof CopperPipe) && !(oppBlock instanceof CopperFitting) && !oppState.isRedstoneConductor(world, pos);

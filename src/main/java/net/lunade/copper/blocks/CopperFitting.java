@@ -243,6 +243,7 @@ public class CopperFitting extends BaseEntityBlock implements SimpleWaterloggedB
     public static final Block WAXED_EXPOSED_FITTING = new CopperFitting(Properties.of(Material.METAL, MaterialColor.TERRACOTTA_LIGHT_GRAY).requiresCorrectToolForDrops().strength(1.5F, 3.0F).sound(SoundType.COPPER), 0, ParticleTypes.SQUID_INK);
     public static final Block WAXED_COPPER_FITTING = new CopperFitting(Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE).requiresCorrectToolForDrops().strength(1.5F, 3.0F).sound(SoundType.COPPER), 0, ParticleTypes.SQUID_INK);
 
+    /*
     public static final Block CORRODED_FITTING = new CopperFitting(Properties
             .of(Material.METAL, MaterialColor.QUARTZ)
             .requiresCorrectToolForDrops()
@@ -254,7 +255,9 @@ public class CopperFitting extends BaseEntityBlock implements SimpleWaterloggedB
                     CopperPipeMain.CORRODED_COPPER_FALL,
                     CopperPipeMain.CORRODED_COPPER_HIT
             )), 4, ParticleTypes.SQUID_INK);
+     */
 
+    /*
     public static final Block BLACK_FITTING = new CopperFitting(Properties.of(Material.METAL, MaterialColor.COLOR_BLACK).requiresCorrectToolForDrops().strength(1.5F, 3.0F).sound(SoundType.COPPER), 2, ParticleTypes.SQUID_INK);
     public static final Block RED_FITTING = new CopperFitting(Properties.of(Material.METAL, MaterialColor.COLOR_RED).requiresCorrectToolForDrops().strength(1.5F, 3.0F).sound(SoundType.COPPER), 2, CopperPipeMain.RED_INK);
     public static final Block GREEN_FITTING = new CopperFitting(Properties.of(Material.METAL, MaterialColor.COLOR_GREEN).requiresCorrectToolForDrops().strength(1.5F, 3.0F).sound(SoundType.COPPER), 2, CopperPipeMain.GREEN_INK);
@@ -288,5 +291,5 @@ public class CopperFitting extends BaseEntityBlock implements SimpleWaterloggedB
     public static final Block GLOWING_MAGENTA_FITTING = new CopperFitting(Properties.of(Material.METAL, MaterialColor.COLOR_MAGENTA).requiresCorrectToolForDrops().strength(1.5F, 3.0F).sound(SoundType.COPPER).lightLevel(CopperPipe::getLuminance).emissiveRendering((state, world, pos) -> CopperPipe.hasItem(state)),2, CopperPipeMain.MAGENTA_INK);
     public static final Block GLOWING_ORANGE_FITTING = new CopperFitting(Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE).requiresCorrectToolForDrops().strength(1.5F, 3.0F).sound(SoundType.COPPER).lightLevel(CopperPipe::getLuminance).emissiveRendering((state, world, pos) -> CopperPipe.hasItem(state)),2, CopperPipeMain.ORANGE_INK);
     public static final Block GLOWING_WHITE_FITTING = new CopperFitting(Properties.of(Material.METAL, MaterialColor.SNOW).requiresCorrectToolForDrops().strength(1.5F, 3.0F).sound(SoundType.COPPER).lightLevel(CopperPipe::getLuminance).emissiveRendering((state, world, pos) -> CopperPipe.hasItem(state)),2, CopperPipeMain.WHITE_INK);
-
+     */
 }

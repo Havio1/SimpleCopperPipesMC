@@ -15,6 +15,7 @@ public class CopperPipeClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
+        /*
         ParticleFactoryRegistry.getInstance().register(CopperPipeMain.RED_INK, PipeInkParticle.RedFactory::new);
         ParticleFactoryRegistry.getInstance().register(CopperPipeMain.GREEN_INK, PipeInkParticle.GreenFactory::new);
         ParticleFactoryRegistry.getInstance().register(CopperPipeMain.BROWN_INK, PipeInkParticle.BrownFactory::new);
@@ -30,6 +31,7 @@ public class CopperPipeClient implements ClientModInitializer {
         ParticleFactoryRegistry.getInstance().register(CopperPipeMain.MAGENTA_INK, PipeInkParticle.MagentaFactory::new);
         ParticleFactoryRegistry.getInstance().register(CopperPipeMain.ORANGE_INK, PipeInkParticle.OrangeFactory::new);
         ParticleFactoryRegistry.getInstance().register(CopperPipeMain.WHITE_INK, PipeInkParticle.WhiteFactory::new);
+        */
 
         ClientPlayNetworking.registerGlobalReceiver(NOTE_PACKET, (client, handler, buf, responseSender) -> {
             BlockPos pos = buf.readBlockPos();
