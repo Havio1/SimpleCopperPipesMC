@@ -217,7 +217,7 @@ public class CopperPipe extends BaseEntityBlock implements SimpleWaterloggedBloc
             BlockEntity entity = world.getBlockEntity(pos);
             if (entity instanceof CopperPipeEntity pipe) {
                 pipe.canDispense = (dirBlock == Blocks.AIR || dirBlock == Blocks.WATER) && (oppBlock != Blocks.AIR && oppBlock != Blocks.WATER);
-                pipe.corroded = oppBlock == CopperFitting.CORRODED_FITTING || state.getBlock() == CopperPipe.CORRODED_PIPE;
+                //pipe.corroded = oppBlock == CopperFitting.CORRODED_FITTING || state.getBlock() == CopperPipe.CORRODED_PIPE;
                 pipe.shootsControlled = oppBlock == Blocks.DROPPER;
                 pipe.shootsSpecial = oppBlock == Blocks.DISPENSER;
                 pipe.canAccept = !(oppBlock instanceof CopperPipe) && !(oppBlock instanceof CopperFitting) && !oppState.isRedstoneConductor(world, pos);
@@ -652,6 +652,7 @@ public class CopperPipe extends BaseEntityBlock implements SimpleWaterloggedBloc
     public static final Block WAXED_EXPOSED_PIPE = new CopperPipe(Properties.of(Material.METAL, MaterialColor.TERRACOTTA_LIGHT_GRAY).requiresCorrectToolForDrops().strength(1.5F, 3.0F).sound(SoundType.COPPER), 1,18, ParticleTypes.SQUID_INK);
     public static final Block WAXED_COPPER_PIPE = new CopperPipe(Properties.of(Material.METAL, MaterialColor.COLOR_ORANGE).requiresCorrectToolForDrops().strength(1.5F, 3.0F).sound(SoundType.COPPER), 1,20, ParticleTypes.SQUID_INK);
 
+    /*
     public static final Block CORRODED_PIPE = new CopperPipe(Properties
             .of(Material.METAL, MaterialColor.TERRACOTTA_ORANGE)
             .requiresCorrectToolForDrops()
@@ -697,5 +698,5 @@ public class CopperPipe extends BaseEntityBlock implements SimpleWaterloggedBloc
     public static final Block GLOWING_LIGHT_GRAY_PIPE = new CopperPipe(Properties.of(Material.METAL, MaterialColor.COLOR_LIGHT_GRAY).requiresCorrectToolForDrops().strength(1.5F, 3.0F).sound(SoundType.COPPER).lightLevel(CopperPipe::getLuminance).emissiveRendering((state, world, pos) -> CopperPipe.shouldGlow(state)), 4,20, CopperPipeMain.LIGHT_GRAY_INK);
     public static final Block GLOWING_GRAY_PIPE = new CopperPipe(Properties.of(Material.METAL, MaterialColor.COLOR_GRAY).requiresCorrectToolForDrops().strength(1.5F, 3.0F).sound(SoundType.COPPER).lightLevel(CopperPipe::getLuminance).emissiveRendering((state, world, pos) -> CopperPipe.shouldGlow(state)), 4,21, CopperPipeMain.GRAY_INK);
     public static final Block GLOWING_BROWN_PIPE = new CopperPipe(Properties.of(Material.METAL, MaterialColor.COLOR_BROWN).requiresCorrectToolForDrops().strength(1.5F, 3.0F).sound(SoundType.COPPER).lightLevel(CopperPipe::getLuminance).emissiveRendering((state, world, pos) -> CopperPipe.shouldGlow(state)), 4,22, CopperPipeMain.BROWN_INK);
-
+*/
 }
